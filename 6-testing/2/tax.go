@@ -5,6 +5,15 @@ import (
 	"time"
 )
 
+type Repository interface {
+	SaveTax(amount float64) error
+}
+
+func CalculateTaxSave(amount float64, repository Repository) error {
+	tax := CalculateTax2(amount)
+	return repository.SaveTax(tax)
+}
+
 func CalculateTax(amount float64) (float64, error) {
 	if amount <= 0 {
 		return 0, errors.New("amount must be greater than 0")
