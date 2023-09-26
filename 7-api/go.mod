@@ -8,8 +8,10 @@ require (
 	github.com/spf13/viper v1.15.0
 	github.com/stretchr/testify v1.8.1
 	golang.org/x/crypto v0.0.0-20220525230936-793ad666bf5e
-	gorm.io/gorm v1.25.0
+	gorm.io/gorm v1.25.2-0.20230530020048-26663ab9bf55
 )
+
+require github.com/mattn/go-sqlite3 v1.14.17 // indirect
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -37,4 +39,5 @@ require (
 	golang.org/x/text v0.5.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+	gorm.io/driver/sqlite v1.5.3
 )
