@@ -1,0 +1,3 @@
+*.vscode
+*test.db
+*__debug_bin*
